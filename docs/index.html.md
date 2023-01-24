@@ -13,10 +13,34 @@ free to join us!
 
 ## Upcoming Events
 
-Initial meeting for the semester, where we'll discuss our plans for the
-semester and what we're interested in working on.
+**January 24, 2023: Initial meeting** for the semester, where we'll
+discuss our plans for the semester and what we're interested in working
+on.
 
-A first resource is our article on [Developer Tools for Machine
-Learning](dev-tools-ml).
+A good first resource is our article on [Developer Tools for Machine
+Learning](machine-learning-developer-tools).
 
-### Weekly Reading Group
+```{=html}
+<!-- ## Past Events
+
+None yet! -->
+```
+## Principles
+
+-   **Good resources:** Use the best possible resources to learn,
+    whether that's a blog post, a book, a paper, or even a YouTube
+    video.
+-   **Learning together:** None of us are experts, so we learn together.
+    We're all here to help each other.
+-   **Ambitious goals and projects:** Even if we don't finish a project,
+    we'll learn a lot along the way.
+-   **Inclusivity:** We are open to all students at UNC, regardless of
+    major or experience level.
+-   **Transparency:** We will be as transparent as possible about our
+    projects and our progress. We also encourage feedback and criticism.
+
+```{=html}
+<!-- ## Contact
+
+If you have any questions, feel free to contact us at carolinamachinelearning@gmail.com or on our Twitter or Instagram. -->
+```

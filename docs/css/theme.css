@@ -10,7 +10,8 @@
 
   --color-text: #1b2733;
   --color-text-secondary: #637282;
-  --color-link: #0070e0;
+  --color-link:  #4B9CD3;
+  --color-dark-highlight: #007FAE;
   --color-sidenote: #616970;
 
   --highlight-red: #ea9999;
@@ -298,12 +299,12 @@ label.sidenote-number {
 
 h1, h2 {
   font-family: var(--font-family-heading);
-  font-weight: var(--heading-font-weight);
+  /* font-weight: var(--heading-font-weight); */
 }
 
 h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 
 h1.title {
@@ -311,7 +312,7 @@ h1.title {
   margin-bottom: var(--line-height);
   font-size: var(--title-font-size);
   line-height: var(--title-line-height);
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 h1.title code {
@@ -433,7 +434,7 @@ hr {
 
 a code, a:link code, a:visited code,
 a, a:link, a:visited {
-  color: inherit;
+  color: var(--color-link);
   /* text-decoration: none; */
 }
 
@@ -904,13 +905,14 @@ nav#TOC > input:checked + ul {
   nav#TOC a,
   nav#TOD a:link,
   nav#TOD a:visited {
-    color: var(--color-text-secondary);
+    /* color: var(--color-text-secondary); */
+    color: var(--color-link);
   }
 
   nav#TOC a:hover,
   nav#TOC a:hover code {
-    text-decoration: none;
-    color: var(--color-link);
+    /* text-decoration: none; */
+    color: var(--color-dark-highlight);
   }
 }
 

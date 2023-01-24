@@ -51,7 +51,9 @@ mkdir -p "$dest_dir"
 
 css_rel_path="$("$realpath" "docs/css/" --relative-to "$dest_dir")"
 
-cp -vr public/* docs
+cp -r public/* docs
+
+echo $css_rel_path
 
 pandoc --to markdown -C -s --csl ./csls/chicago-fullnote-bibliography.csl --metadata=suppress-bibliography:true -t markdown-citations \
   --output "$dest.md" \
