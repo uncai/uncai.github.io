@@ -51,6 +51,12 @@ mkdir -p "$dest_dir"
 
 css_rel_path="$("$realpath" "docs/css/" --relative-to "$dest_dir")"
 
+pwd
+
+pandoc --to markdown -C -s --csl ./csls/chicago-fullnote-bibliography.csl --metadata=suppress-bibliography:true -t markdown-citations \
+  --output "$dest.md" \
+  "$src"
+
 pandoc \
   --katex \
   --from markdown+tex_math_single_backslash \
@@ -62,4 +68,4 @@ pandoc \
   --toc \
   --wrap=none \
   --output "$dest" \
-  "$src"
+  "$dest.md"

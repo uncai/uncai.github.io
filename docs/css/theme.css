@@ -1,6 +1,8 @@
 
 /* ----- Global settings ----------------------------------------------- {{{ */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   /* --- Colors --- */
 
@@ -8,7 +10,7 @@
 
   --color-text: #1b2733;
   --color-text-secondary: #637282;
-  --color-link: #0070e0;
+  --color-link: #7BAFD4;
   --color-sidenote: #616970;
 
   --highlight-red: #ea9999;
@@ -27,13 +29,14 @@
 
   /* --- Text --- */
 
-  --font-family-prose: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  --font-family-heading: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  --font-family-prose: 'Georgia', serif; /*system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;*/
+  --font-family-heading: 'Inter', sans-serif;/*system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;*/
   --font-family-code: Menlo, monospace;
   --side-note-number-font-family: var(--font-family-prose);
 
-  --line-height: 26px;
-  --font-size: 17px;
+  --line-height: 32px;
+/*26px;*/
+  --font-size: 20px;
 
   --inline-code-font-size: 15px;
   --code-block-font-size: 14px;
@@ -44,7 +47,7 @@
   --tight-code-padding-top: 5px;
 
   --side-note-line-height: 20px;
-  --side-note-font-size: 13px;
+  --side-note-font-size: 15px;
   --side-note-code-font-size: 13px;
   --side-note-baseline-offset: 4px;
   --side-note-sup-offset: -6px;
@@ -307,6 +310,7 @@ h1.title {
   margin-bottom: var(--line-height);
   font-size: var(--title-font-size);
   line-height: var(--title-line-height);
+  font-weight: bold;
 }
 
 h1.title code {
@@ -429,7 +433,7 @@ hr {
 a code, a:link code, a:visited code,
 a, a:link, a:visited {
   color: var(--color-link);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 a:hover {

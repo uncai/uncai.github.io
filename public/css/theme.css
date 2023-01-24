@@ -1,6 +1,8 @@
 
 /* ----- Global settings ----------------------------------------------- {{{ */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   /* --- Colors --- */
 
@@ -27,13 +29,14 @@
 
   /* --- Text --- */
 
-  --font-family-prose: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  --font-family-heading: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  --font-family-prose: 'Georgia', serif; /*system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;*/
+  --font-family-heading: 'Inter', sans-serif;/*system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;*/
   --font-family-code: Menlo, monospace;
   --side-note-number-font-family: var(--font-family-prose);
 
-  --line-height: 26px;
-  --font-size: 17px;
+  --line-height: 32px;
+/*26px;*/
+  --font-size: 20px;
 
   --inline-code-font-size: 15px;
   --code-block-font-size: 14px;
@@ -44,7 +47,7 @@
   --tight-code-padding-top: 5px;
 
   --side-note-line-height: 20px;
-  --side-note-font-size: 13px;
+  --side-note-font-size: 15px;
   --side-note-code-font-size: 13px;
   --side-note-baseline-offset: 4px;
   --side-note-sup-offset: -6px;
@@ -100,10 +103,10 @@
 
   --main-width: 745px;
   /* The name doesn't indicate it, but this variable actually specifies an
-   * effective minimum width. (It didn't previously behave this way, but the
-   * change to do so was made in a backwards-compatible way, so the variable
-   * was not renamed.)
-   **/
+    * effective minimum width. (It didn't previously behave this way, but the
+    * change to do so was made in a backwards-compatible way, so the variable
+    * was not renamed.)
+    **/
   --main-width-narrow: 550px;
   --side-note-max-width: 300px;
 
@@ -238,7 +241,7 @@ sup {
   font-feature-settings: "tnum" 1;
 
   /* Mimic 'vertical-align: super' (browser style for sup tag)
-   * without causing a gap in our text's implicit grid. */
+    * without causing a gap in our text's implicit grid. */
   vertical-align: baseline;
   position: relative;
   top: var(--side-note-sup-offset);
@@ -267,8 +270,8 @@ label.sidenote-number {
 }
 
 /* Unfortunately, variables aren't in scope here.
- * See calculations in Horizontal layouting.
- */
+  * See calculations in Horizontal layouting.
+  */
 @media screen and (max-width: calc(26px + 550px + 26px + 169px + 26px - 1px)) {
   .margin-toggle:checked + .sidenote,
   .margin-toggle:checked + .marginnote {
@@ -298,7 +301,8 @@ h1, h2 {
   font-weight: var(--heading-font-weight);
 }
 
-h4, h5, h6 {
+h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
   font-weight: normal;
 }
 
@@ -307,6 +311,7 @@ h1.title {
   margin-bottom: var(--line-height);
   font-size: var(--title-font-size);
   line-height: var(--title-line-height);
+  font-weight: bold;
 }
 
 h1.title code {
@@ -428,8 +433,8 @@ hr {
 
 a code, a:link code, a:visited code,
 a, a:link, a:visited {
-  color: var(--color-link);
-  text-decoration: none;
+  color: inherit;
+  /* text-decoration: none; */
 }
 
 a:hover {
@@ -479,11 +484,11 @@ span.underline{ text-decoration: underline; }
 /* ----- Code ---------------------------------------------------------- {{{ */
 
 /* Pandoc code blocks with a language look like div.sourceCode > pre.sourceCode
- * Otherwise, it's just a pre (without .sourceCode)
- *
- * The 'code' element is tricky because it's used for inline code and code in a
- * pre.
- */
+  * Otherwise, it's just a pre (without .sourceCode)
+  *
+  * The 'code' element is tricky because it's used for inline code and code in a
+  * pre.
+  */
 
 code {
   font-family: var(--font-family-code);
@@ -555,8 +560,8 @@ pre > code.sourceCode > span {
 
 div.sourceCode {
   /* Need to make room for line numbers (even if they're not going to be used).
-   * Width doesn't matter, just needs to be big enough to hold the largest line
-   * number. */
+    * Width doesn't matter, just needs to be big enough to hold the largest line
+    * number. */
   --line-numbers-width: calc(4 * var(--line-numbers-font-size));
   --line-numbers-negative-width: calc(-1 * var(--line-numbers-width));
   margin-left: var(--line-numbers-negative-width);
@@ -609,18 +614,18 @@ pre.tight-code > code.sourceCode > span {
 
 /* --- Code line highlights --- {{{ */
 /* I used some code I contributed to owickstrom's pandoc-emphasize-code[1] as
- * inspiration for these changes.
- *
- * The novel part is using :nth-of-type(...) selectors and CSS classes, instead
- * of needing a pandoc filter. This means that we can stick with pandoc's
- * default syntax highlighter, and not need to requirer JavaScript for syntax
- * highlighting. It has the obvious limitation that it places a fixed limit on
- * lines that can be highlighted, but these additional CSS styles are easy
- * enough to write, so anyone who needs more lines can write their own
- * stylesheet and include it to add more after the fact.
- *
- * [1] https://github.com/owickstrom/pandoc-emphasize-code/pull/3
- */
+  * inspiration for these changes.
+  *
+  * The novel part is using :nth-of-type(...) selectors and CSS classes, instead
+  * of needing a pandoc filter. This means that we can stick with pandoc's
+  * default syntax highlighter, and not need to requirer JavaScript for syntax
+  * highlighting. It has the obvious limitation that it places a fixed limit on
+  * lines that can be highlighted, but these additional CSS styles are easy
+  * enough to write, so anyone who needs more lines can write their own
+  * stylesheet and include it to add more after the fact.
+  *
+  * [1] https://github.com/owickstrom/pandoc-emphasize-code/pull/3
+  */
 
 pre > code.sourceCode > span::after {
   position: absolute;
@@ -808,6 +813,7 @@ table > caption code {
 }
 
 nav#TOC {
+  font-family: var(--font-family-heading);
   margin-bottom: var(--line-height);
   border-left: 1px solid var(--color-text-secondary);
   padding-left: 1.5rem;
@@ -837,10 +843,10 @@ nav#TOC > input:checked + ul {
 }
 
 /* Unfortunately, variables aren't in scope here.
- * 745px = --main-width
- * 52px = 2 * --line-height
- * 206px = side note min width
- */
+  * 745px = --main-width
+  * 52px = 2 * --line-height
+  * 206px = side note min width
+  */
 @media screen and (min-width: calc(745px + 2 * (52px + 206px + 52px) - 1px)) {
   header {
     margin-bottom: var(--line-height);
@@ -925,10 +931,10 @@ nav#TOC > input:checked + ul {
 /* --- Side notes and table of contents always visible --- {{{ */
 
 /* Unfortunately, variables aren't in scope here.
- * 745px = --main-width
- * 52px = 2 * --line-height
- * 206px = side note min width
- */
+  * 745px = --main-width
+  * 52px = 2 * --line-height
+  * 206px = side note min width
+  */
 @media screen and (min-width: calc(745px + 2 * (52px + 206px + 52px))) {
   header,
   main,
@@ -984,10 +990,10 @@ nav#TOC > input:checked + ul {
 /* --- Side notes visibile, table of contents collapsed, double-wide margins --- {{{ */
 
 /* Unfortunately, variables aren't in scope here.
- * 745px = --main-width
- * 52px = 2 * --line-height
- * 206px = side note min width
- */
+  * 745px = --main-width
+  * 52px = 2 * --line-height
+  * 206px = side note min width
+  */
 @media screen and (min-width: calc(52px + 745px + 52px + 206px + 52px)) and (max-width: calc(745px + 2 * (52px + 206px + 52px) - 1px)) {
   header,
   nav#TOC,
@@ -1050,10 +1056,10 @@ nav#TOC > input:checked + ul {
 /* --- Side notes visibile, table of contents collapsed --- {{{ */
 
 /* Unfortunately, variables aren't in scope here.
- * 550px = --main-width-narrow
- * 26px = --line-height
- * 169px = side note min width narrow
- */
+  * 550px = --main-width-narrow
+  * 26px = --line-height
+  * 169px = side note min width narrow
+  */
 @media screen and (min-width: calc(26px + 550px + 26px + 169px + 26px)) and (max-width: calc(52px + 745px + 52px + 206px + 52px - 1px)) {
   header,
   nav#TOC,
@@ -1098,8 +1104,8 @@ nav#TOC > input:checked + ul {
 /* --- Side notes and table of contents collapsed --- {{{ */
 
 /* Unfortunately, variables aren't in scope here.
- * See calculations above.
- */
+  * See calculations above.
+  */
 @media screen and (max-width: calc(26px + 550px + 26px + 169px + 26px - 1px)) {
   header,
   nav#TOC,
@@ -1262,4 +1268,4 @@ table, figure, pre, img {
 /* }}} */
 
 /* vim:fdm=marker
- */
+  */
