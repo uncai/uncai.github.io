@@ -16,11 +16,12 @@ None yet! -->
 
 ## Principles
 
-- **Good resources:** Use the best possible resources to learn, whether that's a blog post, a book, a paper, or even a YouTube video.
+- **Using the best resources** for learning, whether that's a blog post, a book, a paper, or even a YouTube video.
 - **Learning together:** None of us are experts, so we learn together. We're all here to help each other.
 - **Ambitious goals and projects:** Even if we don't finish a project, we'll learn a lot along the way.
 - **Inclusivity:** We are open to all students at UNC, regardless of major or experience level. 
-- **Transparency:** We will be as transparent as possible about our projects and our progress. We also encourage feedback and criticism.
+- **Transparency:** We will be as transparent as possible about our plans and progress. We also encourage feedback and criticism.
+
 
 <!-- ## Contact
 

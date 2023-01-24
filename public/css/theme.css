@@ -153,6 +153,7 @@ html {
 }
 
 body {
+  /* MAIN FONT */
   font-family: var(--font-family-prose);
   color: var(--color-text);
   font-size: var(--font-size);
@@ -169,6 +170,11 @@ body {
   width: 100%;
 
   background-color: var(--background-color);
+}
+
+strong {
+  font-family: var(--font-family-heading);
+  font-size: 19px;
 }
 
 @media print {
