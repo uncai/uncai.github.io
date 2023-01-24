@@ -16,4 +16,7 @@ free to join us!
 Initial meeting for the semester, where we'll discuss our plans for the
 semester and what we're interested in working on.
 
+A first resource is our article on [Developer Tools for Machine
+Learning](dev-tools-ml).
+
 ### Weekly Reading Group
