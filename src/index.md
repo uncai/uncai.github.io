@@ -6,7 +6,7 @@ We're a group of students at the University of North Carolina at Chapel Hill who
 
 ## Upcoming Events
 
-**January 30, 2023 @ 6pm: Initial meeting** for the semester, where we'll introduce the club and discuss our plans. We'll also jump into some coding: we'll build multiple machine learning models and compare their outputs, while only using a few lines of code (through the magic of AutoML!).
+**January 30, 2023 @ 6pm: Initial meeting** for the semester, where we'll introduce the club and discuss our plans. We'll also jump into some coding: we'll build multiple machine learning models and compare their outputs, while only using a few lines of code -- with the magic of AutoML!
 
 You can check out our [Resources](resources) page or our article on [Developer Tools for Machine Learning](machine-learning-developer-tools).
 

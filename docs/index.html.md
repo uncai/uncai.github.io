@@ -15,9 +15,9 @@ free to join us!
 
 **January 30, 2023 @ 6pm: Initial meeting** for the semester, where
 we'll introduce the club and discuss our plans. We'll also jump into
-some coding: we'll build multiple mach ine learning models and compare
-their outputs, while only using a few lines of code (through the magic
-of AutoML!).
+some coding: we'll build multiple machine learning models and compare
+their outputs, while only using a few lines of code -- with the magic of
+AutoML!
 
 You can check out our [Resources](resources) page or our article on
 [Developer Tools for Machine
