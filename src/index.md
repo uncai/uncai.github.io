@@ -6,11 +6,9 @@ We're a group of students at the University of North Carolina at Chapel Hill who
 
 ## Upcoming Events
 
-**January 24, 2023: Initial meeting** for the semester, where we'll discuss our plans for the semester and what we're interested in working on.
+**January 30, 2023 @ 6pm: Initial meeting** for the semester, where we'll introduce the club and discuss our plans. We'll also jump into some coding: we'll build multiple mach ine learning models and compare their outputs, while only using a few lines of code (through the magic of AutoML!).
 
-A good first resource is our article on [Developer Tools for Machine Learning](machine-learning-developer-tools).
-
-Check out our [Resources](resources) page for more resources to get started.
+You can check out our [Resources](resources) page or our article on [Developer Tools for Machine Learning](machine-learning-developer-tools).
 
 <!-- ## Past Events
 
@@ -21,10 +19,4 @@ None yet! -->
 - **Using the best resources** for learning, whether that's a blog post, a book, a paper, or even a YouTube video.
 - **Learning together:** None of us are experts, so we learn together. We're all here to help each other.
 - **Ambitious goals and projects:** Even if we don't finish a project, we'll learn a lot along the way.
-- **Inclusivity:** We are open to all students at UNC, regardless of major or experience level. 
-- **Transparency:** We will be as transparent as possible about our plans and progress. We also encourage feedback and criticism.
-
-
-<!-- ## Contact
-
-If you have any questions, feel free to contact us at carolinamachinelearning@gmail.com or on our Twitter or Instagram. -->
+- **Inclusivity:** We are open to all students at UNC, regardless of major or experience level.

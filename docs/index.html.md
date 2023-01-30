@@ -13,15 +13,15 @@ free to join us!
 
 ## Upcoming Events
 
-**January 24, 2023: Initial meeting** for the semester, where we'll
-discuss our plans for the semester and what we're interested in working
-on.
+**January 30, 2023 @ 6pm: Initial meeting** for the semester, where
+we'll introduce the club and discuss our plans. We'll also jump into
+some coding: we'll build multiple mach ine learning models and compare
+their outputs, while only using a few lines of code (through the magic
+of AutoML!).
 
-A good first resource is our article on [Developer Tools for Machine
+You can check out our [Resources](resources) page or our article on
+[Developer Tools for Machine
 Learning](machine-learning-developer-tools).
-
-Check out our [Resources](resources) page for more resources to get
-started.
 
 ```{=html}
 <!-- ## Past Events
@@ -38,11 +38,3 @@ None yet! -->
     we'll learn a lot along the way.
 -   **Inclusivity:** We are open to all students at UNC, regardless of
     major or experience level.
--   **Transparency:** We will be as transparent as possible about our
-    plans and progress. We also encourage feedback and criticism.
-
-```{=html}
-<!-- ## Contact
-
-If you have any questions, feel free to contact us at carolinamachinelearning@gmail.com or on our Twitter or Instagram. -->
-```
