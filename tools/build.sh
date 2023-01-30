@@ -55,7 +55,7 @@ cp -r public/* docs
 
 echo $css_rel_path
 
-pandoc --to markdown -C -s --csl ./csls/chicago-fullnote-bibliography.csl --metadata=suppress-bibliography:true -t markdown-citations \
+pandoc --to markdown -C -s --csl ./csls/chicago-fullnote-bibliography.csl --metadata=suppress-bibliography:true -t markdown-citations -f markdown+autolink_bare_uris \
   --output "$dest.md" \
   "$src"
 

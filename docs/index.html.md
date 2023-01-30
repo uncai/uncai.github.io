@@ -1,7 +1,7 @@
 ---
 csl: ./csls/chicago-fullnote-bibliography.csl
 suppress-bibliography: true
-title: Carolina ML
+title: UNC Artificial Intelligence Club
 ---
 
 We're a group of students at the University of North Carolina at Chapel
@@ -19,6 +19,9 @@ on.
 
 A good first resource is our article on [Developer Tools for Machine
 Learning](machine-learning-developer-tools).
+
+Check out our [Resources](resources) page for more resources to get
+started.
 
 ```{=html}
 <!-- ## Past Events
