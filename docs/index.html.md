@@ -13,21 +13,23 @@ free to join us!
 
 ## Upcoming Events
 
-**January 30, 2023 @ 6pm: Initial meeting** for the semester, where
-we'll introduce the club and discuss our plans. We'll also jump into
-some coding: we'll build multiple machine learning models and compare
-their outputs, while only using a few lines of code -- with the magic of
-AutoML!
+**February 6, 2023 @ 6pm: Building a neural network** Check out the
+"Great Posts" section of our [Resources](resources) page if you want a
+head start in learning about neural networks. We'll be building a neural
+network from scratch, and then using it to classify images.
+
+## Past events
+
+**January 30, 2023 @ 6pm: Initial meeting** We introduced the club and
+discussed plans for the semester. We built multiple machine learning
+models and compared their outputs, while only using a few lines of code
+-- through the magic of AutoML! We also discussed how neural networks
+work. Here's the [slides, code, and resources](first-meeting).
 
 You can check out our [Resources](resources) page or our article on
 [Developer Tools for Machine
 Learning](machine-learning-developer-tools).
 
-```{=html}
-<!-- ## Past Events
-
-None yet! -->
-```
 ## Principles
 
 -   **Using the best resources** for learning, whether that's a blog
