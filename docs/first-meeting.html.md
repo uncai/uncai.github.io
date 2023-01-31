@@ -4,7 +4,7 @@ suppress-bibliography: true
 title: First meeting
 ---
 
-We introduced the club and discussed plans for the semester. We also
+We introduced the club and discussed plans for the semester. We built
 multiple machine learning models and compared their outputs, while only
 using a few lines of code -- through the magic of AutoML! We also
 discussed how neural networks work.
